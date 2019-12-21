@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="awesome">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src='./js/angular.min.js'></script>
+        <!-- <script src='./js/angular.min.js'></script> -->
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <script src="./js/app/app.config.js"></script>
+        <script src="./js/app/app.module.js"></script>
+
+        <script src="./js/app/firstController/first.component.js"></script>
+        <script src="./js/app/firstController/first.module.js"></script>
+
         <title>Document</title>
     </head>
     <body>
         <h1>Hello, {{name}}</h1>
         <input type='text' ng-model='name' />
+
+        <div ng-controller="FirstController">{{title}}</div>
     </body>
 </html>
